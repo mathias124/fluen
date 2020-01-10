@@ -26,10 +26,8 @@ void keyPressed(){//en funktion det tegnes hvis en given knap bliver trykket.
 
   if(keyPressed){//har gjort så man selv kan justere den
     if(key=='e'){//hvis du trykker e aktivere dette.
-         a=a+0.5;
-      s=a*12;
+ 
       translate(width/2,height/2);
-      scale(s); //her fortæller jeg at den skal scale i størrelse forhold til værdierne når man trykker e.
       Flue f = new Flue(random(width), random(height));//her gør jeg så flyverne er involveret i classen flue.
       f.bigness=random(1,4);//her tilføjer det så det er tilfældigt for hvilken storhed de nye flyer har.
         flueListe.add(f);//tilføjer fluen til arraylisten.
@@ -38,8 +36,7 @@ void keyPressed(){//en funktion det tegnes hvis en given knap bliver trykket.
     }
     if(keyPressed){//gør det muligt at restarter programmeret dræbe flugerne for et øjeblik.
     if(key=='f'){
-      clear();/rengører entities.
-      s=0;
+      clear();//rengører entities.
   }
     }
 }
