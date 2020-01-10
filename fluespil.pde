@@ -1,8 +1,8 @@
 ArrayList<Flue> flueListe = new ArrayList<Flue>();//laver en liste over variabler.
 float a=0.0;
 float s=0.0;
-PVector velocity;
-PVector lokation;
+PVector velocity;//Laver en ny vektor som skulle lave en velocity vector.
+PVector lokation;// laver en ny vektor til at skulle bounce
 float b=random(0,height);
 float g =random(0,width);
 
